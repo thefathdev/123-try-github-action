@@ -10,7 +10,7 @@ export function counter(
       return num - 1;
 
     case "double":
-      return num * 3;
+      return num * 4;
 
     default:
       return num;
