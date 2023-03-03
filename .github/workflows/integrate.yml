@@ -3,6 +3,13 @@ name: node Continuos Integration
 on:
   pull_request:
     branches: [main]
+  push:
+    branches:
+      - main
+      - testing
+    paths:
+      - "src/**"
+      - ".github/workflows/integrate.yml"
 
 jobs:
   test_pull_request:
